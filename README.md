@@ -21,17 +21,17 @@ This project is a **scalable network simulator** that models communication betwe
 ---
 
 ## 📂 Project Structure
-📦 network-simulator
-┣ 📂 src/ # Source code (C++ implementation)
-┃ ┣ 📜 main.cpp # Main simulation loop
-┃ ┣ 📜 Sensor.cpp # Sensor node logic
-┃ ┣ 📜 Sink.cpp # Central sink for data aggregation
-┃ ┗ 📜 Event.cpp # Event-driven architecture
-┣ 📂 include/ # Header files
-┣ 📂 docs/ # Documentation and design details
-┣ 📂 tests/ # Unit tests and validation
-┣ 📜 README.md # This file
-┣ 📜 .gitignore # Ignore unnecessary files
+network-simulator-TDMA
+┣ 📂 src/          # Source code (C++ implementation)
+┃ ┣ 📜 main.cpp    # Main simulation loop
+┃ ┣ 📜 Sensor.cpp  # Sensor node logic
+┃ ┣ 📜 Sink.cpp    # Central sink for data aggregation
+┃ ┣ 📜 Event.cpp   # Event-driven architecture
+┣ 📂 include/      # Header files
+┣ 📂 docs/         # Documentation and design details
+┣ 📂 tests/        # Unit tests and validation
+┣ 📜 README.md     # This file
+┣ 📜 .gitignore    # Ignore unnecessary files
 ┗ 📜 CMakeLists.txt # Build system for C++
 
 ---
