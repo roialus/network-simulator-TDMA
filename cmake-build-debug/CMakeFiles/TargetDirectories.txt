@@ -1,0 +1,3 @@
+C:/Users/roi_1/CLionProjects/NetworkSim/cmake-build-debug/CMakeFiles/NetworkSim.dir
+C:/Users/roi_1/CLionProjects/NetworkSim/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/roi_1/CLionProjects/NetworkSim/cmake-build-debug/CMakeFiles/rebuild_cache.dir
