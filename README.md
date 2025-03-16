@@ -21,3 +21,61 @@ This project is a **scalable network simulator** that models communication betwe
 ---
 
 ## 📂 Project Structure
+📦 network-simulator
+┣ 📂 src/ # Source code (C++ implementation)
+┃ ┣ 📜 main.cpp # Main simulation loop
+┃ ┣ 📜 Sensor.cpp # Sensor node logic
+┃ ┣ 📜 Sink.cpp # Central sink for data aggregation
+┃ ┗ 📜 Event.cpp # Event-driven architecture
+┣ 📂 include/ # Header files
+┣ 📂 docs/ # Documentation and design details
+┣ 📂 tests/ # Unit tests and validation
+┣ 📜 README.md # This file
+┣ 📜 .gitignore # Ignore unnecessary files
+┗ 📜 CMakeLists.txt # Build system for C++
+
+---
+
+## 🛠️ Installation & Usage  
+
+### **🔹 Prerequisites**
+- **C++ Compiler** (GCC/Clang/MSVC)  
+- **CMake** (for building the project)  
+
+### **🔹 Build & Run**  
+```bash
+git clone https://github.com/your-username/network-simulator.git
+cd network-simulator
+mkdir build && cd build
+cmake ..
+make
+./network_simulator
+
+🔬 Simulation Details
+🔹 How It Works
+Initialization:
+
+The sink assigns time slots to each sensor.
+Each sensor generates random sequential packet numbers and starts measurements.
+Sensor Transmission:
+
+Waits for its time slot and then transmits data.
+Sends packet ID, measurement, and timestamp.
+Sink Processing:
+
+Buffers incoming packets.
+Sorts them by sequence number and timestamp.
+Optionally sends ACKs for lost packets.
+🔹 Example Simulation Output
+yaml
+Copy
+Edit
+[Time 0.1s] Sensor 1 -> Sink | Packet ID: 1001, Measurement: 23.5°C  
+[Time 0.2s] Sensor 2 -> Sink | Packet ID: 1002, Measurement: 22.8°C  
+[Time 0.3s] Sensor 3 -> Sink | Packet ID: 1003, Measurement: 24.1°C  
+[Time 0.4s] Sink Sorting and Storing Data...  
+🎯 Future Enhancements
+🚀 Dynamic Slot Assignment – Adjust slots based on network conditions.
+📡 Multi-Hop Communication – Support sensor-to-sensor relays.
+📊 Performance Analytics – Add visualization for packet delays and loss.
+
