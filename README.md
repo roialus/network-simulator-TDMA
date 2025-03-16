@@ -50,31 +50,36 @@ mkdir build && cd build
 cmake ..
 make
 ./network_simulator
+```
 
-🔬 Simulation Details
-🔹 How It Works
-Initialization:
+---
 
-The sink assigns time slots to each sensor.
-Each sensor generates random sequential packet numbers and starts measurements.
-Sensor Transmission:
+##🔬 Simulation Details
+###🔹 How It Works
+1. Initialization:
+  The sink assigns time slots to each sensor.
+  Each sensor generates random sequential packet numbers and starts measurements.
 
-Waits for its time slot and then transmits data.
-Sends packet ID, measurement, and timestamp.
-Sink Processing:
+2. Sensor Transmission:
+  Waits for its time slot and then transmits data.
+  Sends packet ID, measurement, and timestamp.
 
+3. Sink Processing:
 Buffers incoming packets.
 Sorts them by sequence number and timestamp.
 Optionally sends ACKs for lost packets.
-🔹 Example Simulation Output
+
+###🔹 Example Simulation Output
 yaml
 Copy
 Edit
 [Time 0.1s] Sensor 1 -> Sink | Packet ID: 1001, Measurement: 23.5°C  
 [Time 0.2s] Sensor 2 -> Sink | Packet ID: 1002, Measurement: 22.8°C  
 [Time 0.3s] Sensor 3 -> Sink | Packet ID: 1003, Measurement: 24.1°C  
-[Time 0.4s] Sink Sorting and Storing Data...  
-🎯 Future Enhancements
+[Time 0.4s] Sink Sorting and Storing Data...
+
+
+##🎯 Future Enhancements
 🚀 Dynamic Slot Assignment – Adjust slots based on network conditions.
 📡 Multi-Hop Communication – Support sensor-to-sensor relays.
 📊 Performance Analytics – Add visualization for packet delays and loss.
