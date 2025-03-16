@@ -24,7 +24,18 @@ This project is a **scalable network simulator** that models communication betwe
 
 ## 📦 **Project Structure**  
 ```
-network-simulator-TDMA ┣ 📂 src/ # Source code (C++ implementation) ┃ ┣ 📜 main.cpp # Main simulation loop ┃ ┣ 📜 Sensor.cpp # Sensor node logic ┃ ┣ 📜 Sink.cpp # Central sink for data aggregation ┃ ┣ 📜 Event.cpp # Event-driven architecture ┣ 📂 include/ # Header files ┣ 📂 docs/ # Documentation and design details ┣ 📂 tests/ # Unit tests and validation ┣ 📜 README.md # This file ┣ 📜 .gitignore # Ignore unnecessary files ┗ 📜 CMakeLists.txt # Build system for C++
+network-simulator-TDMA
+┣ 📂 src/ # Source code (C++ implementation)
+┃ ┣ 📜 main.cpp # Main simulation loop
+┃ ┣ 📜 Sensor.cpp # Sensor node logic
+┃ ┣ 📜 Sink.cpp # Central sink for data aggregation
+┃ ┣ 📜 Event.cpp # Event-driven architecture
+┣ 📂 include/ # Header files
+┣ 📂 docs/ # Documentation and design details
+┣ 📂 tests/ # Unit tests and validation
+┣ 📜 README.md # This file
+┣ 📜 .gitignore # Ignore unnecessary files
+┗ 📜 CMakeLists.txt # Build system for C++
 ```
 
 ---
@@ -87,14 +98,4 @@ cmake ..
 # Compile the project
 make
 ```
-
----
-
-## 🤝 **Contributing**
-Contributions are welcome! Fork the repository, create a branch, and submit a pull request.  
-
----
-
-## 📜 **License**
-This project is open-source and licensed under the [MIT License](LICENSE).
 
